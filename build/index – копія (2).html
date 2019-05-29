@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>mlp-bus.com</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo-bus.png" alt="" title="" /></img></a>
+        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Головна</a></li>
+          <li><a href="#about">Рейси</a></li>
+          <li><a href="#services">Оренла автобусів</a></li>
+          <li><a href="#portfolio">Пасажирам</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="container">
+        <h1>Автобусні перевезення</h1>
+        <h2>Україна - Польща</h2>
+        <form class="needs-validation main-search-form" novalidate>
+          <div class="panel-body">
+            <h3>Замовити квиток</h3>
+          </div>
+          <div class="form-row">
+            <span class="wp-departure">
+              <label>Звідки</label>
+              <select name="account" class="form-control m-b">
+                <option>Калуш</option>
+                <option>Щецин</option>
+              </select>
+            </span>
+            <span class="wp-strilka">
+              <img src="img/strilka-2.png" class="img-strilka" alt="strilka" title="strilka" />
+            </span>
+            <span class="wp-arrival-point">
+              <label>Куди</label>
+              <select name="account" class="form-control m-b">
+                <option>Щецин</option>
+                <option>Калуш</option>
+              </select>
+            </span>
+            <span class="wp-date">
+              <div class="control-group date-wrapper">
+                <label>Дата</label>
+                <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
+                  data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                  <input class="input-date" id="get-date" size="16" type="text" value="" readonly>
+                  <span class="add-on"><i class="icon-th fa fa-calendar"></i></span>
+                </div>
+                <input type="hidden" id="dtp_input2" value="" /><br />
+              </div>
+            </span>
+            <span class="wp-place">
+              <label>Кількість</label>
+              <div class="number">
+                <span class="minus">-</span>
+                <input type="text" class="place-number" value="1" />
+                <span class="plus">+</span>
+              </div>
+            </span>
+            <span class="wp-search">
+              <div class="wrapper-button">
+                <button class="btn-get-started search-button-submit">Знайти квиток</button>
+              </div>
+            </span>
+          </div>
+        </form>
+
+        <form class="bus-timetable-info" novalidate>
+          <div class="box">
+            <div class="wp-top-ticket-left">
+              <div class="ticket-info-text">13:40</div>
+              <div class="ticket-info-city">Калуш</div>
+              <div class="ticket-info-small">Автостанція Калуш, вулиця Привокзальна будинок 15</div>
+            </div>
+            <div class="wp-top-ticket-center">
+              <div class="ticket-info-text">09:50</div>
+              <div class="ticket-info-city">Щецин</div>
+              <div class="ticket-info-small">Автовокзал "Щецин", площа Гродницькі; будинок 1</div>
+            </div>
+            <div class="wp-top-ticket-right">
+              <div class="ticket-info-city ticket-price">1100 грн.</div>
+              <div class="wrapper-button">
+                <button class="btn-get-started search-button-submit">Купити</button>
+              </div>
+            </div>
+            <div class="wp-bottom-ticket-left">
+              <div>
+                <button type="button" class="btn btn-default btn-xs info-button-collapse" data-toggle="collapse"
+                  data-target="#demo">Деталі</button>
+                <div id="demo" class="collapse">
+                  <div class="ticket-info-small">В дорозі:</div>
+                  <div class="ticket-info-small">21 год. 10 хв.</div>
+                  <div class="ticket-info-small">Автобус: Van Hool Astron</div>
+                  <div class="ticket-info-small">Номер автобуса: LBI 09048</div>
+                </div>
+              </div>
+            </div>
+            <div class="wp-bottom-ticket-center">
+              <div class="ticket-info-small">Автобус: Van Hool Astron</div>
+              <div class="ticket-info-small">Номер автобуса: LBI 09048</div>
+            </div>
+            <div class="wp-bottom-ticket-right">
+              <div class="ticket-info-small">В дорозі:</div>
+              <div class="ticket-info-small">21 год. 10 хв.</div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+      <section id="about">
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Графік і схема маршруту Івано-Франківськ → Щецин</h4>
+        </div>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Few Words About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                soluta nobis est eligendi</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat tarad limino ata</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title services-title">Чому варто скористатися нашими послугами?</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>1</i></a></div>
+              <h4 class="title advantages-title">Ліцензований перевізник</h4>
+              <p class="description advantages-description">Новий ліцензований перевізник на ринку! Ми пропонуємо
+                оптимальнє поєднання ЯКОСТІ перевезення за доступною ціною.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>2</i></a></div>
+              <h4 class="title advantages-title">СУЧАСНІ АВТОБУСИ</h4>
+              <p class="description">Рейси виконуються <span class="advantages-bold-text">ЩОДЕННО,</span> тому Ви можете
+                будь-яку зручну для Вас дату відправлення.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>3</i></a></div>
+              <h4 class="title advantages-title">ЩОДЕННІ РЕГУЛЯРНІ РЕЙСИ</h4>
+              <p class="description">Рейси виконуються <span class="advantages-bold-text">ЩОДЕННО,</span> тому Ви можете
+                будь-яку зручну для Вас дату відправлення.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>4</i></a></div>
+              <h4 class="title advantages-title">ЗРУЧНО ЗАМОВИТИ БІЛЕТ</h4>
+              <p class="description advantages-description">Ви можете забронювати квиток <span
+                  class="advantages-bold-text">ONLINE </span>не виходячи із дому, а також оплатити його в зручний для
+                Вас спосіб і в будь-якій валюті.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>5</i></a></div>
+              <h4 class="title advantages-title">КОМФОРТНА ПОДОРОЖ</h4>
+              <p class="description">Ваша подорож в комфортних автобусах буде легкою, а час пролетить незамітно!</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>6</i></a></div>
+              <h4 class="title advantages-title">ВОДІЇ-ПРОФЕСІОНАЛИ!</h4>
+              <p class="description">У нашій компанії працють виключно водії професіонали, які забезпечать Вам безпеку і
+                високий рівень сервісу.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #Services -->
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+
+    <!--==========================
+      Services-comfort Section
+    ============================-->
+    <!-- <section id="about" class="services-comfort">
+      <h4 class="section-title">Подорожуй з комфортом!</h4>
+      <div class="container-bus">
+        <div class="container">
+
+          <div class="row about-container">
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-wi-fi.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">вільний <br> WI-FI</span>
+                    </div>
+                  </div>
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-coffe.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">кава <br> в автобусі</span>
+                    </div>
+                  </div>
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-4umadan-crop-u2015.png" class="wi-fi" alt="wi-fi"
+                        title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">вмістиме багажне відділення</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-multimedia-crop-u1923.png" class="wi-fi" alt="wi-fi"
+                        title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">аудіо- <br> відео система</span>
+                    </div>
+                  </div>
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-220.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">розетка <br> 220В</span>
+                    </div>
+                  </div>
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-3"><img src="img/ico-klimat.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                    </div>
+                    <div class="col-lg-9">
+                      <span class="bus-info-text">система <br> клімат контролю</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="row wp-bus-info">
+                    <div class="col-lg-1"><img src="img/ico-krislo.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                    </div>
+                    <div class="col-lg-11">
+                      <span class="bus-info-text long-text">ортопедичні крісла, які трансформуються у спальні
+                        місця</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+
+    <section id="about" class="services-comfort">
+      <h4 class="section-title">Подорожуй з комфортом!</h4>
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6">
+            <img src="img/bus-22.png" class="big-bus-background" alt="wi-fi" title="wi-fi" />
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-wi-fi.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">вільний <br> WI-FI</span>
+                  </div>
+                </div>
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-coffe.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">кава <br> в автобусі</span>
+                  </div>
+                </div>
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-4umadan-crop-u2015.png" class="wi-fi" alt="wi-fi"
+                      title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">вмістиме багажне відділення</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-multimedia-crop-u1923.png" class="wi-fi" alt="wi-fi"
+                      title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">аудіо- <br> відео система</span>
+                  </div>
+                </div>
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-220.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">розетка <br> 220В</span>
+                  </div>
+                </div>
+                <div class="row wp-bus-info">
+                  <div class="col-lg-3"><img src="img/ico-klimat.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                  </div>
+                  <div class="col-lg-9">
+                    <span class="bus-info-text">система <br> клімат контролю</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="row wp-bus-info">
+                  <div class="col-lg-1"><img src="img/ico-krislo.png" class="wi-fi" alt="wi-fi" title="wi-fi" />
+                  </div>
+                  <div class="col-lg-11">
+                    <span class="bus-info-text long-text">ортопедичні крісла, які трансформуються у спальні місця</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    Services-comfort end
+    ============================-->
+
+    <!--==========================
+      About-bus Section
+    ============================-->
+    <section id="about" class="about-bus">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Наш автопарк</h4>
+        </div>
+
+        <div class="row about-container about-bus-container">
+          <!-- <div class="col-lg-6">
+              <h2 class="title">Few Words About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.
+              </p>
+            </div> -->
+
+          <div class="col-lg-6">
+            <img src="img/bus-1-crop-u2237.png" alt="bus" title="bus" />
+            <span class="name-bus">Mercedes-Benz Tourismo RHD</span>
+            <span class="seats-bus">2009р / 57 місць</span>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="img/bus-2-crop-u2247.png" alt="bus" title="bus" />
+            <span class="name-bus">SCANIA Irizar i6s</span>
+            <span class="seats-bus">2015р / 69 місць</span>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="img/bus-siluet.png" alt="bus" title="bus" />
+            <span class="name-bus">Автобус 3</span>
+            <span class="seats-bus">2009р / 57 місць</span>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="img/bus-siluet.png" alt="bus" title="bus" />
+            <span class="name-bus">Автобус 4s</span>
+            <span class="seats-bus">2015р / 69 місць</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    About-bus end
+    ============================-->
+
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-logo">Logo</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app1.jpg" alt="">
+              <div class="details">
+                <h4>App 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web2.jpg" alt="">
+              <div class="details">
+                <h4>Web 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app3.jpg" alt="">
+              <div class="details">
+                <h4>App 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card1.jpg" alt="">
+              <div class="details">
+                <h4>Card 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card2.jpg" alt="">
+              <div class="details">
+                <h4>Card 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web3.jpg" alt="">
+              <div class="details">
+                <h4>Web 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card3.jpg" alt="">
+              <div class="details">
+                <h4>Card 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app2.jpg" alt="">
+              <div class="details">
+                <h4>App 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo1.jpg" alt="">
+              <div class="details">
+                <h4>Logo 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo3.jpg" alt="">
+              <div class="details">
+                <h4>Logo 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web1.jpg" alt="">
+              <div class="details">
+                <h4>Web 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo2.jpg" alt="">
+              <div class="details">
+                <h4>Logo 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <div class="container wow fadeInUp mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="lib/bootstrap-datetimepicker.js"></script>
+  <script src="lib/bootstrap-datetimepicker.ua.js"></script>
+  <script src="lib/bootstrap-datetimepicker.uk.js"></script>
+  <script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+      //language:  'ua',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 2,
+      forceParse: 0,
+      showMeridian: 1
+    });
+    $('.form_date').datetimepicker({
+      language: 'uk',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 2,
+      minView: 2,
+      forceParse: 0
+    });
+    $('.form_time').datetimepicker({
+      language: 'uk',
+      weekStart: 1,
+      todayBtn: 1,
+      autoclose: 1,
+      todayHighlight: 1,
+      startView: 1,
+      minView: 0,
+      maxView: 1,
+      forceParse: 0
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+      });
+      $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+      });
+    });
+  </script>
+
+  <script>
+    var day = { weekday: 'long' };
+    var wd = new Date().toLocaleDateString('uk-uk', day);
+    var dMonth = { day: 'numeric' };
+    var md = new Date().toLocaleDateString('uk-uk', dMonth);
+    var month = { month: 'long' };
+    var m = new Date().toLocaleDateString('uk-uk', month);
+    var year = { year: 'numeric' };
+    var y = new Date().toLocaleDateString('uk-uk', year);
+    var x = document.getElementById("get-date").value = md + " " + m + " " + y;
+  </script>
+
+</body>
+
+</html>

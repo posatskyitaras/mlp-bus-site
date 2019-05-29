@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>mlp-bus.com</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/white-logo.png" alt="" title="" /></img></a>
+        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Головна</a></li>
+          <li><a href="#about">Рейси</a></li>
+          <li><a href="#services">Оренда автобусів</a></li>
+          <li><a href="#portfolio">Пасажирам</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="container">
+        <h1>Автобусні перевезення</h1>
+        <h2>Україна - Польща</h2>
+        <form class="needs-validation main-search-form" novalidate>
+          <div class="panel-body">
+            <h3>Замовити квиток</h3>
+          </div>
+          <div class="form-row">
+            <span class="wp-departure">
+              <label>Звідки</label>
+              <select name="account" class="form-control m-b">
+                <option>Калуш</option>
+                <option>Щецин</option>
+              </select>
+            </span>
+            <span class="wp-strilka">
+              <img src="img/strilka-2.png" class="img-strilka" alt="strilka" title="strilka" />
+            </span>
+            <span class="wp-arrival-point">
+              <label>Куди</label>
+              <select name="account" class="form-control m-b">
+                <option>Щецин</option>
+                <option>Калуш</option>
+              </select>
+            </span>
+            <span class="wp-date">
+              <div class="control-group date-wrapper">
+                <label>Дата</label>
+                <div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy"
+                  data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                  <input class="input-date" id="get-date" size="16" type="text" value="" readonly>
+                  <span class="add-on"><i class="icon-th fa fa-calendar"></i></span>
+                </div>
+                <input type="hidden" id="dtp_input2" value="" /><br />
+              </div>
+            </span>
+            <span class="wp-place">
+              <label>Кількість</label>
+              <div class="number">
+                <span class="minus">-</span>
+                <input type="text" class="place-number" value="1" />
+                <span class="plus">+</span>
+              </div>
+            </span>
+            <span class="wp-search">
+              <div class="wrapper-button">
+                <button class="btn-get-started search-button-submit">Знайти квиток</button>
+              </div>
+            </span>
+          </div>
+        </form>
+
+        <form class="bus-timetable-info" novalidate>
+          <div class="box">
+            <div class="wp-top-ticket-left">
+              <div class="ticket-info-text">13:40</div>
+              <div class="ticket-info-city">Калуш</div>
+              <div class="ticket-info-small">Автостанція Калуш, вулиця Привокзальна будинок 15</div>
+            </div>
+            <div class="wp-top-ticket-center">
+              <div class="ticket-info-text">09:50</div>
+              <div class="ticket-info-city">Щецин</div>
+              <div class="ticket-info-small">Автовокзал "Щецин", площа Гродницькі; будинок 1</div>
+            </div>
+            <div class="wp-top-ticket-right">
+              <div class="ticket-info-city ticket-price">1100 грн.</div>
+              <div class="wrapper-button">
+                <a href="checkout.html" class="btn-get-started search-button-submit">Купити</a>
+              </div>
+            </div>
+            <div class="wp-bottom-ticket-left">
+              <div>
+                <button type="button" class="btn btn-default btn-xs info-button-collapse" data-toggle="collapse"
+                  data-target="#demo">Деталі</button>
+                <div id="demo" class="collapse">
+                  <div class="wrapper-timeline-city">
+                    <section class="comment-list block">
+                      <article id="comment-id-1" class="comment-item">
+                        <span class="fa-stack pull-left m-l-xs">
+                          <i class="fa fa-circle text-danger fa-stack-2x"></i>
+                          <i class="fa fa-arrow-down text-white fa-stack-1x"></i>
+                        </span>
+                        <section class="comment-body m-b-lg">
+                          <div class="ticket-info-city">Івано-Франківськ</div>
+                          <div class="ticket-info-small">
+                            Автостанція "Івано-Франківськ-2" вулиця Гробачевського; будинок 14
+                          </div>
+                        </section>
+                      </article>
+                      <article id="comment-id-1" class="comment-item">
+                        <span class="fa-stack pull-left m-l-xs">
+                          <i class="fa fa-circle text-info fa-stack-2x"></i>
+                          <i class="fa fa-arrow-down text-white fa-stack-1x"></i>
+                        </span>
+                        <section class="comment-body m-b-lg">
+                          <div class="ticket-info-city">Калуш</div>
+                          <div class="ticket-info-small">
+                            Автостанція Калуш вулиця Привокзальна; будинок 15
+                          </div>
+                        </section>
+                      </article>
+                      <article id="comment-id-2" class="comment-item">
+                        <span class="fa-stack pull-left m-l-xs">
+                          <i class="fa fa-circle text-success fa-stack-2x"></i>
+                          <i class="fa fa-check text-white fa-stack-1x"></i>
+                        </span>
+                        <section class="comment-body m-b-lg">
+                          <div class="ticket-info-city">Щецин</div>
+                          <div class="ticket-info-small">
+                            Автостанція "Щецин", площа Гродницькі; будинок 1
+                          </div>
+                        </section>
+                      </article>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wp-bottom-ticket-center">
+              <div class="ticket-info-small">Автобус: Van Hool Astron</div>
+              <div class="ticket-info-small">Номер автобуса: LBI 09048</div>
+            </div>
+            <div class="wp-bottom-ticket-right">
+              <div class="ticket-info-small">В дорозі:</div>
+              <div class="ticket-info-small">21 год. 10 хв.</div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+      <section id="about">
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="section-header header-about">
+          <h4 class="section-title">Графік і схема маршруту <span> Івано-Франківськ</span> → <span>Щецин</span></h4>
+          <img src="img/rozdilitel.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+        <div class="row about-container">
+          <img src="img/Shema.png" class="shema" alt="Shema" title="Shema" />
+        </div>
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header wp-services">
+          <h3 class="section-title services-title">Чому варто скористатися нашими послугами?</h3>
+          <img src="img/rozdilitel.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>1</i></a></div>
+              <h4 class="title advantages-title">Ліцензований перевізник</h4>
+              <p class="description advantages-description">Новий ліцензований перевізник на ринку! Ми пропонуємо
+                оптимальнє поєднання ЯКОСТІ перевезення за доступною ціною.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>2</i></a></div>
+              <h4 class="title advantages-title">СУЧАСНІ АВТОБУСИ</h4>
+              <p class="description">Рейси виконуються <span class="advantages-bold-text">ЩОДЕННО,</span> тому Ви можете
+                будь-яку зручну для Вас дату відправлення.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>3</i></a></div>
+              <h4 class="title advantages-title">ЩОДЕННІ РЕГУЛЯРНІ РЕЙСИ</h4>
+              <p class="description">Рейси виконуються <span class="advantages-bold-text">ЩОДЕННО,</span> тому Ви можете
+                будь-яку зручну для Вас дату відправлення.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>4</i></a></div>
+              <h4 class="title advantages-title">ЗРУЧНО ЗАМОВИТИ БІЛЕТ</h4>
+              <p class="description advantages-description">Ви можете забронювати квиток <span
+                  class="advantages-bold-text">ONLINE </span>не виходячи із дому, а також оплатити його в зручний для
+                Вас спосіб і в будь-якій валюті.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>5</i></a></div>
+              <h4 class="title advantages-title">КОМФОРТНА ПОДОРОЖ</h4>
+              <p class="description">Ваша подорож в комфортних автобусах буде легкою, а час пролетить незамітно!</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box services-advantages">
+              <div class="icon icon-advantages"><a href=""><i>6</i></a></div>
+              <h4 class="title advantages-title">ВОДІЇ-ПРОФЕСІОНАЛИ!</h4>
+              <p class="description">У нашій компанії працють виключно водії професіонали, які забезпечать Вам безпеку і
+                високий рівень сервісу.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #Services -->
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+
+    <!--==========================
+      Services-comfort Section
+    ============================-->
+
+    <section id="services-comfort" class="services-comfort">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Подорожуй з комфортом!</h4>
+          <img src="img/rozdilitel.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+
+        <div class="row about-container">
+          <div class="col-lg-6 col-sm-12">
+            <img src="img/bus-22.png" class="big-bus-background" alt="wi-fi" title="wi-fi" />
+          </div>
+
+          <div class="col-lg-6 col-sm-12">
+            <div class="row">
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-wi-fi.png" class="bus-info" alt="wi-fi" align="left">
+                  вільний <br> WI-FI</p>
+              </div>
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-multimedia-crop-u1923.png" class="bus-info" alt="multimedia"
+                    align="left">
+                  аудіо- <br> відео система</p>
+              </div>
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-coffe.png" class="bus-info" alt="coffe" align="left">
+                  кава <br> в автобусі</p>
+              </div>
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-220.png" class="bus-info" alt="220" align="left">
+                  розетка <br> 220В</p>
+              </div>
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-4umadan-crop-u2015.png" class="bus-info" alt="4umadan"
+                    align="left">
+                  вмістиме багажне <br> відділення</p>
+              </div>
+              <div class="wp-bus-image">
+                <p class="bus-info-text"><img src="img/ico-klimat.png" class="bus-info" alt="klimat" align="left">
+                  система клімат <br> контролю</p>
+              </div>
+              <div class="wp-bus-image wp-bus-image-long">
+                <p class="bus-info-text"><img src="img/ico-krislo.png" class="bus-info" alt="krislo" align="left">
+                  ортопедичні крісла, які трансформуються у <br> спальні місця</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--==========================
+    Services-comfort end
+    ============================-->
+
+    <!--==========================
+      About-bus Section
+    ============================-->
+    <section id="about-bus" class="about-bus">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Наш автопарк</h4>
+          <img src="img/marker-white.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+
+        <div class="row about-container about-bus-container">
+          <div class="col-lg-6">
+            <div class="wow fadeInLeft" style="animation-name: fadeInLeft;">
+              <img src="img/bus-1-crop-u2237.png" alt="bus" title="bus" />
+              <span class="name-bus">Mercedes-Benz Tourismo RHD</span>
+              <span class="seats-bus">2009р / 57 місць</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="wow fadeInRight" style="animation-name: fadeInRight;">
+              <img src="img/bus-2-crop-u2247.png" alt="bus" title="bus" />
+              <span class="name-bus">SCANIA Irizar i6s</span>
+              <span class="seats-bus">2015р / 69 місць</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="wow fadeInLeft" style="animation-name: fadeInLeft;">
+              <img src="img/bus-siluet.png" alt="bus" title="bus" />
+              <span class="name-bus">Автобус 3</span>
+              <span class="seats-bus">2009р / 57 місць</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="wow fadeInRight" style="animation-name: fadeInRight;">
+              <img src="img/bus-siluet.png" alt="bus" title="bus" />
+              <span class="name-bus">Автобус 4s</span>
+              <span class="seats-bus">2015р / 69 місць</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    About-bus end
+    ============================-->
+
+    <!--==========================
+      About us Section
+    ============================-->
+
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Про нас</h4>
+          <img src="img/rozdilitel.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+
+        <div class="wp-about-us">
+          <p class="about-us-text">
+            Компанія <span>“Міжнародні лінії перевезення”</span> пропонує Вам економічні регулярні міжнародні
+            пасажирські перевезення в
+            Німеччину. Якщо скористатися послугами компанії «Бенс Експрес», Ви завжди будете доставлені в пункт
+            призначення вчасно, з висококласним сервісом і з комфортом. Адже кожен рейс обслуговується сучасними
+            туристичними автобусами ЛЮКС-класу з обладнанням останнього покоління.
+          </p>
+
+          <p class="about-us-text">Всі автобуси компанії обладнані зручними ортопедичними розкладними кріслами з
+            підлокітниками, підставками для ніг, об'ємними багажними полицями та індивідуальним освітленням. Новітні
+            системи кондиціонування і вентиляції забезпечують комфортний мікроклімат в салонах автобусів протягом
+            всієї
+            поїздки.</p>
+
+          <p class="about-us-text">Щоб Ваша поїздка на автобусі не була нудною, ми урізноманітнимо
+            її цікавими фільмами
+            і приємною музикою. А наявність безкоштовного доступу до мережі інтернет по бездротовому Wi-Fi з'єднанні в
+            кожному нашому автобусі дозволить Вам під час поїздки підтримувати зв’язок зі своїми рідними та друзями з
+            допомогою Viber, в соціальних мережах, читати свіжі новини або, при необхідності, продовжувати працювати
+            або
+            навчатися.</p>
+
+          <p class="about-us-text">Автобусні перевезення до Польщі- профілюючий напрямок роботи нашої компанії. Досить
+            вузька спеціалізація дозволяє зосередитися на високій якості надання послуг. До кожного пасажиру ми
+            використовуємо індивідуальний підхід. Далеко не останню роль відіграє професіоналізм водіїв і їх великий
+            практичний досвід в області міжнародних перевезень.
+            <br>
+            <span>Ми стараємся, щоб наші клієнти отримали більше ніж очікують!</span></p>
+
+          <p class="about-us-text">Щоб забезпечити пасажирам комфорт, безпеку і вчасністьсть виконання рейсу, ми
+            сумлінно стежимо за технічним станом свого автотранспортного парку. Перед тим, як відправитися в рейс,
+            кожен
+            автобус в обов'язковому порядку проходить технічний контроль із залученням кращих українських та
+            європейських фахівців, сучасного обладнання і спеціалізованих станцій.</p>
+
+          <p class="about-us-text">Особлива увага наших операторів, ввічливість водіїв, технічно справні, чисті і
+            комфортабельні автобуси залишать у Вас позитивні емоції і чудові враження від поїздки. Доручіть реалізацію
+            Вашої поїздки справжнім професіоналам!</p>
+          <p class="about-us-text fat-big">Будемо раді бачити Вас в списку наших постінийних клієнтів!</span>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+    About us end
+    ============================-->
+
+    <!--==========================
+    Write to us Section
+    ============================-->
+
+    <section id="write-to-us" class="write-to-us">
+      <div class="container">
+        <div class="section-header">
+          <h4 class="section-title">Є запитання чи пропозиції? Пишіть нам!</h4>
+          <img src="img/rozdilitel.png" class="rozdilitel" alt="rozdilitel" title="rozdilitel" />
+        </div>
+
+        <div class="wp-write-to-us">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="wp-write-to-us">
+                <form data-validate="parsley">
+                  <div class="panel-body form-write-to-us">
+                    <div class="form-group">
+                      <input type="text" class="form-control parsley-validated" data-required="true"
+                        placeholder="Ім'я, прізвище:">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control parsley-validated" data-type="email" data-required="true"
+                        placeholder="EMAIL:">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" data-type="phone" class="form-control parsley-validated"
+                        placeholder="(XXX) XXXX XXX" data-required="true">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control parsley-validated parsley-error" rows="6" data-minwords="6"
+                        data-required="true" placeholder="Текст повідомлення:"></textarea>
+                    </div>
+                    <button type="submit" class="btn-get-started submit-write-to-us">Надіслати</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+  Write to us end
+  ============================-->
+
+
+    <!--==========================
+    Contacts Section
+  ============================-->
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+
+        <div class="wow fadeInUp wp-write-to-us" style="animation-name: fadeInUp;">
+          <div class="row">
+
+            <div class="col-lg-4">
+              <h4 class="contacts-title">Контакти:</h4>
+              <img src="img/linia-dotten.png" class="linia-dotten" alt="linia-dotten" title="linia-dotten" />
+              <img src="img/ico-phone.png" alt="phone" title="phone" />
+              <p class="contacts-details">+38<span> 068 </span>100 48 00</p>
+              <p class="contacts-details">+38<span> 050 </span>085 06 33</p>
+              <img src="img/ico-mail.png" alt="phone" title="phone" />
+              <p class="contacts-details">mlp.ukraine2018<span>@</span>gmail.com</p>
+              <img src="img/ico-map.png" alt="map" title="map" />
+              <p class="contacts-details">м.Калуша, вул.Глібова, 6</p>
+              <img src="img/linia-dotten.png" class="linia-dotten" alt="linia-dotten" title="linia-dotten" />
+              <p class="contacts-details-capitalized">МІЖНАРОДНІ ЛІНІЇ ПЕРЕВЕЗЕННЯ</p>
+              <p class="details-top">Кращі автобуси! Кращі ціни!</p>
+              <p class="details-top"> Кращий сервіс!</p>
+            </div>
+
+            <div class="col-lg-4">
+              <h4 class="contacts-title">Варто знати!</h4>
+
+              <div class="worth-knowing">
+
+                <img src="img/slide-1.png" class="slide" alt="slide" title="whslideite" />
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+              <h4 class="contacts-title">Ми в соцмережах:</h4>
+              <img src="img/linia-dotten.png" class="linia-dotten" alt="linia-dotten" title="linia-dotten" />
+
+              <div class="social-buttons">
+                <a href="#">
+                  <img src="img/ico-telegram.png" class="slide" alt="slide" title="whslideite" />
+                </a>
+                <a href="#">
+                  <img src="img/ico-instagram.png" class="slide" alt="slide" title="whslideite" />
+                </a>
+                <a href="#">
+                  <img src="img/ico-facebook.png" class="slide" alt="slide" title="whslideite" />
+                </a>
+              </div>
+
+
+              <img src="img/logo-white.png" alt="white" title="white" />
+              <p class="contacts-details"><span> 2019 </span>© всі права захищено</p>
+              <p class="contacts-details credits">Розробка сайту <a href="https://bootstrapmade.com/"><span>
+                    www</span></a></p>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--==========================
+    Contacts end
+  ============================-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+
+    <script src="contactform/contactform.js"></script>
+    <script src="contactform/parsley.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/bootstrap-datetimepicker.js"></script>
+    <script src="lib/bootstrap-datetimepicker.ua.js"></script>
+    <script src="lib/bootstrap-datetimepicker.uk.js"></script>
+    <script type="text/javascript">
+      $('.form_datetime').datetimepicker({
+        //language:  'ua',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
+      });
+      $('.form_date').datetimepicker({
+        language: 'uk',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+      $('.form_time').datetimepicker({
+        language: 'uk',
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 1,
+        minView: 0,
+        maxView: 1,
+        forceParse: 0
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.minus').click(function () {
+          var $input = $(this).parent().find('input');
+          var count = parseInt($input.val()) - 1;
+          count = count < 1 ? 1 : count;
+          $input.val(count);
+          $input.change();
+          return false;
+        });
+        $('.plus').click(function () {
+          var $input = $(this).parent().find('input');
+          $input.val(parseInt($input.val()) + 1);
+          $input.change();
+          return false;
+        });
+      });
+    </script>
+
+    <script>
+      var day = { weekday: 'long' };
+      var wd = new Date().toLocaleDateString('uk-uk', day);
+      var dMonth = { day: 'numeric' };
+      var md = new Date().toLocaleDateString('uk-uk', dMonth);
+      var month = { month: 'long' };
+      var m = new Date().toLocaleDateString('uk-uk', month);
+      var year = { year: 'numeric' };
+      var y = new Date().toLocaleDateString('uk-uk', year);
+      var x = document.getElementById("get-date").value = md + " " + m + " " + y;
+    </script>
+
+</body>
+
+</html>
