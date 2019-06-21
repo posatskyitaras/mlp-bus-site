@@ -1632,10 +1632,10 @@ input[type="checkbox"]:checked + label:before {
 .wrapper-rental-bus {
   background: #f7f7f7;
   min-height: 100vh;
-  padding: 120px 0;
+  padding: 85px 0;
   .section-title {
     text-align: center;
-    margin-bottom: 20px !important;
+    margin: 40px 0 35px !important;
   }
   p {
     font-size: 19px;
@@ -1666,3 +1666,30 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 /* rental bus end */
+
+
+/* for-passengers */
+
+.for-passengers {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 85px 0;
+  .section-title {
+    text-align: center;
+    margin: 40px 0 35px !important;
+  }
+  p {
+    font-size: 19px;
+    text-align: center;
+  }
+}
+
+.text-about-passengers {
+  text-align: center;
+  font-size: 27px !important;
+  color: #233b7e;
+  font-weight: 900;
+}
+
+
+/* for-passengers end */
