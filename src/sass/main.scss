@@ -40,9 +40,22 @@
 .section-title {
   font-size: 33px;
   color: #233b7e;
-  text-transform: none !important;
+  /* text-transform: none !important;*/
   font-weight: 400;
   margin-bottom: 10px !important;
+  .city-gray {
+    color: gray !important;
+  }
+}
+.text-route-diagram {
+  padding: 0 40px;
+}
+
+.all-city-fare {
+  padding: 0 40px;
+  text-align: center;
+  color: #233b7e;
+  font-size: 24px;
 }
 
 .rozdilitel {
@@ -1613,3 +1626,43 @@ input[type="checkbox"]:checked + label:before {
   }
   /*buses end*/
 }
+
+/* rental bus */
+
+.wrapper-rental-bus {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 120px 0;
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  p {
+    font-size: 19px;
+    text-align: center;
+  }
+}
+
+.text-about-benefits {
+  text-align: center;
+  font-size: 27px !important;
+  color: #233b7e;
+  font-weight: 900;
+}
+
+.wp-about-benefits {
+  text-align: center;
+  .col-sm-4 {
+    padding-bottom: 15px;
+  }  
+  img {
+    display: block;
+    margin: 0 auto;
+    background-color: #233b7ee6;
+  }
+  p {
+    padding-top: 10px;
+    font-size: 17px;
+  }
+}
+/* rental bus end */
