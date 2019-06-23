@@ -1657,8 +1657,9 @@ input[type="checkbox"]:checked + label:before {
   }
   img {
     display: block;
+    /*width: 100px;*/
+    max-height: 120px;
     margin: 0 auto;
-    background-color: #233b7ee6;
   }
   p {
     padding-top: 10px;
