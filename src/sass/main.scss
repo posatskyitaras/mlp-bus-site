@@ -1719,6 +1719,8 @@ input[type="checkbox"]:checked + label:before {
 
 .passengers-bus-info {
   margin: -15px 10px 0 0;
+  width: 60px;
+  /*height: 57px;*/
 }
 
 .text-attention {
@@ -1739,6 +1741,15 @@ input[type="checkbox"]:checked + label:before {
     padding: 0 20px;
     margin-bottom: 30px;
   }
+  .passengers-bus-info {
+    margin: 2px 6px 0 0;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .passengers-bus-info {
+    margin: -2px 6px 0 0;
+  } 
 }
 
 /* for-passengers end */
