@@ -1775,23 +1775,42 @@ input[type="checkbox"]:checked + label:before {
     margin: 40px 0 35px !important;
   }
   p {
-    font-size: 19px;
+    font-size: 21px;
     text-align: center;
   }
 }
 
 /* bus (car fleet) end */
 
+.wrapper-bus-carousel {
+  margin-bottom: 65px;
+}
+
 .bus-name {
   font-size: 22px;
   text-align: left !important;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 700;
   color: #233b7e;
 }
 
+.wp-bus-img-slide {
+  position: absolute;
+  right: 10px;
+  width: 580px;
+  top: 45px;
+  min-height: 100px;
+  background-color: #fff;
+  padding: 40px 60px;
+}
+
 .wp-bus-service {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   span {
     height: 52px;
     width: 52px;
@@ -1803,23 +1822,55 @@ input[type="checkbox"]:checked + label:before {
     background-size: 50% auto;
     border-radius: 5px;
     text-indent: -99999px;
-
+    &:first-child {
+      margin-left: 0;
+    }
+    &:nth-child(8) {
+      margin-left: 0;
+    }
+  }
+  .srv1 {
+    background-image: url("../img/wifi.png");
+  }
+  .srv2 {
+    background-image: url("../img/vc.png");
+  }
+  .srv3 {
+    background-image: url("../img/kitchen.png");
+  }
+  .srv4 {
+    background-image: url("../img/cond.png");
+  }
+  .srv5 {
+    background-image: url("../img/cofe.png");
+  }
+  .srv6 {
+    background-image: url("../img/vip.png");
+  }
+  .srv7 {
     background-image: url("../img/dvd.png");
-  } 
+  }
+  .srv8 {
+    background-image: url("../img/usb.png");
+  }
+  .srv9 {
+    background-image: url("../img/e3.png");
+  }
+  .srv10 {
+    background-image: url("../img/e4.png");
+  }
+  .srv11 {
+    background-image: url("../img/e5.png");
+  }
+  .srv12 {
+    background-image: url("../img/e6.png");
+  }
+
 }
 
-.srv1 {
-  background-image: url("../img/dvd.png");
-}
-
-.wp-bus-img-slide {
-  position: absolute;
-  right: 10px;
-  width: 580px;
-  top: 60px;
-  min-height: 100px;
-  background-color: #fff;
-  padding: 40px 60px;
+.imglist {
+  background-color: red;
+  display: block;
 }
 
 .carousel-icons-img {
