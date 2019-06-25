@@ -840,9 +840,19 @@ button:focus {
 .about-bus {
   padding: 50px 0 !important;
   background: #233b7e url(/img/pattern-buss.png) repeat left top !important;
-  .section-title {
-    color: #fff !important;
-    font-weight: 900;
+  
+
+  .bus-section-title {
+    display: block;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    &:hover {
+      color: #f8b624;
+    }
   }
 
   .about-bus-container {
@@ -1691,10 +1701,10 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
   font-size: 27px !important;
   color: #233b7e;
-  font-weight: 900;  
+  font-weight: 900;
 }
 
-.about-passengers-conditions{
+.about-passengers-conditions {
   margin: 0 0 10px 0;
 }
 
@@ -1750,7 +1760,7 @@ input[type="checkbox"]:checked + label:before {
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .passengers-bus-info {
     margin: -2px 6px 0 0;
-  } 
+  }
 }
 
 /* for-passengers end */
