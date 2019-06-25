@@ -840,7 +840,6 @@ button:focus {
 .about-bus {
   padding: 50px 0 !important;
   background: #233b7e url(/img/pattern-buss.png) repeat left top !important;
-  
 
   .bus-section-title {
     display: block;
@@ -1782,3 +1781,51 @@ input[type="checkbox"]:checked + label:before {
 }
 
 /* bus (car fleet) end */
+
+.bus-name {
+  font-size: 22px;
+  text-align: left !important;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #233b7e;
+}
+
+.wp-bus-service {
+  margin-bottom: 20px;
+  span {
+    height: 52px;
+    width: 52px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    margin: 15px 0 0 15px;
+    background: 50% 50% no-repeat;
+    background-size: 50% auto;
+    border-radius: 5px;
+    text-indent: -99999px;
+
+    background-image: url("../img/dvd.png");
+  } 
+}
+
+.srv1 {
+  background-image: url("../img/dvd.png");
+}
+
+.wp-bus-img-slide {
+  position: absolute;
+  right: 10px;
+  width: 580px;
+  top: 60px;
+  min-height: 100px;
+  background-color: #fff;
+  padding: 40px 60px;
+}
+
+.carousel-icons-img {
+  width: 110px;
+  float: left;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  background: red;
+}
