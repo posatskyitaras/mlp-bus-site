@@ -40,7 +40,6 @@
 .section-title {
   font-size: 33px;
   color: #233b7e;
-  /* text-transform: none !important;*/
   font-weight: 400;
   margin-bottom: 10px !important;
   .city-gray {
@@ -722,6 +721,7 @@ button:focus {
   width: 100%;
   height: 100%;
 }
+
 /*** section id="about   1 end***/
 
 /*** Services Section ***/
@@ -1040,6 +1040,7 @@ button:focus {
 }
 
 /*** Write to us Section ***/
+
 .write-to-us {
   padding: 50px 0 !important;
   background: url(/img/buss_bg.jpg) no-repeat left top;
@@ -1111,8 +1112,6 @@ button:focus {
     color: black;
   }
 }
-
-/*** Write to us Section ***/
 
 .wp-write-to-us {
   text-align: center;
@@ -1328,26 +1327,12 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-/* #666666 */
 /*** checkout ***/
 
 .wp-bus-checkout {
-  /*buses*/
-
   .bus-layout {
-    /*background-color: #fff;*/
     margin-bottom: 15px;
   }
-  /*
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 16px;
-  }
-*/
   .plane {
     margin: 20px auto;
     max-width: 300px;
@@ -1383,7 +1368,6 @@ input[type="checkbox"]:checked + label:before {
   .exit {
     position: relative;
     height: 50px;
-    /*&:before, зліва*/
     &:after {
       content: "Вихід";
       font-size: 14px;
@@ -1427,10 +1411,8 @@ input[type="checkbox"]:checked + label:before {
   }
 
   .fuselage {
-    /*border-right: 5px solid #d8d8d8;
-  border-left: 5px solid #d8d8d8;*/
     .row {
-      margin-right: 0; /* 5px; */
+      margin-right: 0;
       margin-left: 0px;
       display: list-item;
       &:after,
@@ -1730,7 +1712,6 @@ input[type="checkbox"]:checked + label:before {
 .passengers-bus-info {
   margin: -15px 10px 0 0;
   width: 60px;
-  /*height: 57px;*/
 }
 
 .text-attention {
@@ -1796,6 +1777,7 @@ input[type="checkbox"]:checked + label:before {
 
 .wp-bus-img-slide {
   position: absolute;
+  overflow-x: hidden;
   right: 10px;
   width: 580px;
   top: 45px;
@@ -1805,6 +1787,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .wp-bus-service {
+  margin: 0 -15px;
   margin-bottom: 25px;
   &:after {
     content: "";
@@ -1822,12 +1805,6 @@ input[type="checkbox"]:checked + label:before {
     background-size: 50% auto;
     border-radius: 5px;
     text-indent: -99999px;
-    &:first-child {
-      margin-left: 0;
-    }
-    &:nth-child(8) {
-      margin-left: 0;
-    }
   }
   .srv1 {
     background-image: url("../img/wifi.png");
@@ -1865,7 +1842,6 @@ input[type="checkbox"]:checked + label:before {
   .srv12 {
     background-image: url("../img/e6.png");
   }
-
 }
 
 .imglist {
@@ -1879,4 +1855,31 @@ input[type="checkbox"]:checked + label:before {
   margin: 0 5px 5px 0;
   cursor: pointer;
   background: red;
+}
+
+@media only screen and (max-width: 767px) {
+  .wp-bus-img-slide {
+    position: initial;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .wp-bus-service {
+    margin: 0 -5px 15px;
+    span {
+      height: 36px;
+      width: 36px;
+      margin: 5px 0 0 5px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .wp-bus-img-slide {
+    position: initial;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
 }
