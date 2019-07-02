@@ -1854,17 +1854,11 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.imglist {
-  background-color: red;
-  display: block;
-}
-
 .carousel-icons-img {
   width: 110px;
   float: left;
   margin: 0 5px 5px 0;
   cursor: pointer;
-  background: red;
 }
 
 @media only screen and (max-width: 767px) {
