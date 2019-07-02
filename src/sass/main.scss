@@ -11,18 +11,28 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-menu a { 
+    padding: 0 5px 10px 5px;
+  }
+}
+
 #hero {
   &:before {
     background: none !important;
   }
   h1 {
-    margin: 0;
-    margin-top: 40px;
+    margin: 0;    
   }
   h2 {
     padding-top: 20px;
     margin-bottom: 30px;
   }
+}
+
+#hero .hero-container {
+  position: relative;
+  top: 210px;
 }
 
 .nav-menu > li > a:before {
@@ -215,8 +225,8 @@ button:focus {
 }
 
 @media only screen and (max-width: 479.98px) {
-  #hero .container {
-    margin-top: 300px !important;
+  #hero .hero-container {
+    top: 120px;
   }
   #hero h1 {
     margin: 0;
@@ -282,8 +292,8 @@ button:focus {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  #hero .container {
-    margin-top: 60px;
+  #hero .hero-container {
+    top: 120px;
   }
   #hero h1 {
     margin: 0;
