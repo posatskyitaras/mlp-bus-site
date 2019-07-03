@@ -95,21 +95,6 @@
   width: 22%;
 }
 
-/*
-.wp-strilka {
-  width: 5%;
-  position: relative;
-  .img-strilka {
-    position: absolute;
-    margin: auto;
-    top: 24px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-}
-*/
-
 .wp-arrival-point {
   width: 22%;
 }
@@ -246,12 +231,7 @@ button:focus {
       margin: 0 0 15px 0;
     }
   }
-  /*
-  .wp-strilka {
-    visibility: hidden;
-    display: none;
-  }
-  */
+  
   .wp-departure,
   .wp-arrival-point,
   .wp-date,
@@ -327,12 +307,7 @@ button:focus {
    
     
   }
-  /*
-  .wp-strilka {
-    visibility: hidden;
-    display: none;
-  }
-  */
+  
   .wp-search {
     width: 50%;
     margin: 0 auto;
@@ -364,11 +339,7 @@ button:focus {
   .wp-departure {
     width: 22%;
   }
-/*
-  .wp-strilka {
-    width: 5%;
-  }
-*/
+  
   .wp-arrival-point {
     width: 22%;
   }
@@ -399,13 +370,6 @@ button:focus {
   }
 }
 
-/*
-@media only screen and (min-width: 1199.98px) {
-  .wp-strilka .img-strilka {
-    top: 29px;
-  }
-}
-*/
 /*** form  bus-timetable-info ***/
 
 .bus-timetable-info {
