@@ -215,11 +215,16 @@ button:focus {
 
 @media only screen and (max-width: 479.98px) {
   #hero .hero-container {
-    top: 120px;
+    top: 80px;
   }
   #hero h1 {
+    font-size: 20px;
     margin: 0;
   }
+  #hero h2 {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
   .main-search-form {
     label {
       margin-bottom: 3px;
@@ -228,7 +233,8 @@ button:focus {
   }
   .panel-body {
     h3 {
-      margin: 0 0 15px 0;
+      font-size: 20px;
+      margin: 0 0 5px 0;
     }
   }
   
@@ -248,7 +254,7 @@ button:focus {
     margin-bottom: 10px;
   }
   .wp-place {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     label {
       text-align: center;
       margin-left: -60px;
