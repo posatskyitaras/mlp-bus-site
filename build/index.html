@@ -134,8 +134,9 @@
                           <i class="fa fa-circle text-danger fa-stack-2x"></i>
                           <i class="fa fa-arrow-down text-white fa-stack-1x"></i>
                         </span>
-                        <section class="comment-body m-b-lg">                            
-                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">9:30</span> Івано-Франківськ</div>
+                        <section class="comment-body m-b-lg">
+                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">9:30</span>
+                            Івано-Франківськ</div>
                           <div class="ticket-info-small">
                             Автостанція "Івано-Франківськ-2" вулиця Гробачевського; будинок 14
                           </div>
@@ -147,7 +148,8 @@
                           <i class="fa fa-arrow-down text-white fa-stack-1x"></i>
                         </span>
                         <section class="comment-body m-b-lg">
-                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">10:40</span> Калуш</div>
+                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">10:40</span> Калуш
+                          </div>
                           <div class="ticket-info-small">
                             Автостанція Калуш вулиця Привокзальна; будинок 15
                           </div>
@@ -159,7 +161,8 @@
                           <i class="fa fa-check text-white fa-stack-1x"></i>
                         </span>
                         <section class="comment-body m-b-lg">
-                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">07:20</span> Щецин</div>
+                          <div class="ticket-info-city"><span class="badge bg-success ticket-time">07:20</span> Щецин
+                          </div>
                           <div class="ticket-info-small">
                             Автостанція "Щецин", площа Гродницькі; будинок 1
                           </div>
@@ -648,12 +651,13 @@
     </script>
 
     <script>
+      const monthNames = ["Січня", "Лютого", "Березня", "Квітня", "Травня", "Червня", "Липня", "Серпня", "Вересня", "Жовтня", "Листопада", "Грудня"]      
       var day = { weekday: 'long' };
       var wd = new Date().toLocaleDateString('uk-uk', day);
       var dMonth = { day: 'numeric' };
       var md = new Date().toLocaleDateString('uk-uk', dMonth);
       var month = { month: 'long' };
-      var m = new Date().toLocaleDateString('uk-uk', month);
+      var m = monthNames[new Date().getMonth()];
       var year = { year: 'numeric' };
       var y = new Date().toLocaleDateString('uk-uk', year);
       var x = document.getElementById("get-date").value = md + " " + m + " " + y;
