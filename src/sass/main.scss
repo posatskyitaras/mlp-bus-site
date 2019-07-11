@@ -12,7 +12,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .nav-menu a { 
+  .nav-menu a {
     padding: 0 5px 10px 5px;
   }
 }
@@ -22,7 +22,7 @@
     background: none !important;
   }
   h1 {
-    margin: 0;    
+    margin: 0;
   }
   h2 {
     padding-top: 20px;
@@ -224,7 +224,7 @@ button:focus {
   #hero h2 {
     padding-top: 0;
     margin-bottom: 10px;
-}
+  }
   .main-search-form {
     label {
       margin-bottom: 3px;
@@ -237,7 +237,7 @@ button:focus {
       margin: 0 0 5px 0;
     }
   }
-  
+
   .wp-departure,
   .wp-arrival-point,
   .wp-date,
@@ -310,10 +310,8 @@ button:focus {
   }
   .wp-date {
     padding: 0 5px 0 3px;
-   
-    
   }
-  
+
   .wp-search {
     width: 50%;
     margin: 0 auto;
@@ -345,7 +343,7 @@ button:focus {
   .wp-departure {
     width: 22%;
   }
-  
+
   .wp-arrival-point {
     width: 22%;
   }
@@ -852,10 +850,10 @@ button:focus {
     img {
       width: 100%;
       max-width: 450px;
-    }   
+    }
     .bus {
       &:hover {
-        opacity: 0.7;  
+        opacity: 0.7;
         transition: opacity 0.3s;
       }
     }
@@ -870,7 +868,7 @@ button:focus {
     font-weight: 900;
     &:hover {
       color: #fff;
-    }    
+    }
   }
   .seats-bus {
     display: block;
@@ -1115,6 +1113,24 @@ button:focus {
   }
 }
 
+.payment-systems {
+  margin-top: 20px;
+  .payment-systems-text {
+    font-size: 18px;
+    color: #e2e9fd;
+    font-weight: 700;    
+    padding-bottom: 10px;
+  }
+  span {
+    margin-right: 10px;
+    img {
+      border-radius: 3px;
+      max-width: 55px;
+      height: auto;
+    }
+  }
+}
+
 .wp-write-to-us {
   text-align: center;
   .contacts-details {
@@ -1167,7 +1183,7 @@ button:focus {
 }
 
 .social-buttons {
-  margin: 37px 0 26px;
+  margin: 20px 0 20px;
   a {
     padding-right: 20px;
   }
@@ -1868,7 +1884,6 @@ input[type="checkbox"]:checked + label:before {
       height: 36px;
       width: 36px;
       margin: 5px 0 0 5px;
-
     }
   }
 }
