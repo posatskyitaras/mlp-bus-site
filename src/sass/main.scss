@@ -2048,6 +2048,9 @@ input[type="checkbox"]:checked + label:before {
   p {
     font-size: 150%;
   }
+  span {
+    color: red;
+  }
   img {
     max-width: 300px;
     margin-top: -50px;
