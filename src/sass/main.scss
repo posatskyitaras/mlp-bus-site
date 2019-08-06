@@ -1717,6 +1717,15 @@ input[type="checkbox"]:checked + label:before {
   font-weight: 900;
 }
 
+.text-about-text-transform {
+  text-transform: uppercase;
+  color: red;
+}
+
+.text-about-warning {
+  color: red;
+}
+
 .about-passengers-conditions {
   margin: 0 0 10px 0;
 }
