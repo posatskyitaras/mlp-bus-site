@@ -796,6 +796,16 @@ button:focus {
   }
 }
 
+.bus-comfort {
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+  .bus-comfort {
+    padding-top: 0;
+  }
+}
+
 .big-bus-background {
   width: 100%;
 }
