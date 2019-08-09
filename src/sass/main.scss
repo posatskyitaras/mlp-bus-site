@@ -2172,16 +2172,6 @@ background: rgba(35,59,126,.9)!important;
   padding-top: 80px;
 }
 
-@media (max-width: 576px) {
-  .offer-wrapper {
-    width: 100% !important;
-    padding: 0 20px;
-    margin-bottom: 30px;
-  }
-}
-
-/* offer-wrapper end */
-
 @media only screen and (max-width: 767px) {
   .offer-wrapper {
     .container {
@@ -2189,4 +2179,7 @@ background: rgba(35,59,126,.9)!important;
     }
   }
 }
+
+/* offer-wrapper end */
+
 
