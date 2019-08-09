@@ -2136,18 +2136,21 @@ background: rgba(35,59,126,.9)!important;
 .offer-wrapper {
   background: #f7f7f7;
   min-height: 100vh;
-  padding: 105px 0;
+  padding: 105px 0 5px 0;
+  position: relative;
   .offer-text {
     margin: 0px 0 15px 0;
     text-indent: 2em;
     text-align: justify;
   }
   .offer-text-warning {
-      color: red;
+    color: red;
   }
   .great-title {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
+    margin: 0 0 20px 0;
+    padding-top: 10px;
   }
 }
 
@@ -2155,20 +2158,18 @@ background: rgba(35,59,126,.9)!important;
   font-size: 22px;
   margin-bottom: 10px;
   padding-left: 5px;
-  p {
-    font-size: 16px;
-    margin: 0px 0 15px 0;
-    text-align: justify;    
-  }
 }
+
 .average-text-list {
   font-size: 16px;
   padding-left: 5px;
-  p {
-    margin: 0px 0 15px 0;
-    text-align: justify;
-    
-  }
+  margin: 0px 0 15px 0;
+  text-align: justify;
+}
+
+.mpl-text-footer {
+  margin: 0 0 5px 0;
+  padding-top: 80px;
 }
 
 @media (max-width: 576px) {
@@ -2180,3 +2181,12 @@ background: rgba(35,59,126,.9)!important;
 }
 
 /* offer-wrapper end */
+
+@media only screen and (max-width: 767px) {
+  .offer-wrapper {
+    .container {
+      max-width: 640px;
+    }
+  }
+}
+
