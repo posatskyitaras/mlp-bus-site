@@ -501,6 +501,7 @@ button:focus {
       .ticket-time {
         font-size: 13px;
         padding: 2px 5px;
+        margin-right: 5px;
       }
     }
   }
@@ -511,9 +512,9 @@ button:focus {
   .fa-stack {
     position: relative;
     display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
+    width: 2em !important;
+    height: 2em !important;
+    line-height: 2em !important;
     vertical-align: middle;
   }
 
@@ -1271,12 +1272,37 @@ button:focus {
 
 .wp-amount-checkbox {
   padding-top: 15px;
-  border-top: 1px solid #e5e5e5;
+
   .text-info {
     color: #233b7ee6 !important;
   }
   label {
     margin-bottom: 0;
+  }
+}
+
+.payment-systems-info {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+  .payment-system-text {
+    font-size: 14px;
+    margin: 0;
+  }
+  .payment-systems {
+    margin-top: 0;
+    text-align: center;
+    span {
+      margin-right: 0;
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .payment-systems-info .payment-system-text {
+    text-align: center;
   }
 }
 
@@ -1303,15 +1329,16 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"]:checked + label:before {
   color: #000;
 }
-
-.button-order {
-  margin-top: 10px;
-  background-color: #233b7ee6;
-  border-color: #233b7ee6;
-  &:hover,
-  &:focus {
-    background-color: #233b7ed1;
-    border-color: #233b7ed1;
+.panel-footer {
+  .button-order {
+    margin-top: 10px;
+    background-color: #233b7ee6 !important;
+    border-color: #233b7ee6 !important;
+    &:hover,
+    &:focus {
+      background-color: #233b7ed1 !important;
+      border-color: #233b7ed1 !important;
+    }
   }
 }
 
@@ -2181,5 +2208,3 @@ background: rgba(35,59,126,.9)!important;
 }
 
 /* offer-wrapper end */
-
-
