@@ -1155,6 +1155,24 @@ button:focus {
       font-weight: 900;
     }
   }
+
+  .contacts-details-mailto {
+    display: block;
+    font-size: 18px;
+    color: #e2e9fd;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 3px;
+    span {
+      color: #f8b624;
+      font-weight: 900;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+
   .contacts-details-capitalized {
     font-size: 19px;
     line-height: 22px;
